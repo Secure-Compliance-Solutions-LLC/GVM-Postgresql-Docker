@@ -44,3 +44,7 @@ RUN mkdir /build && \
     make install && \
     cd / && \
     rm -rf /build
+
+COPY start.sh /
+
+ENTRYPOINT ["/start.sh"]
